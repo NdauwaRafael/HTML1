@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML1 CODE CHALLENGE</title>
+</head>
+
+
+<body>
+
+<table width="100%">
+ <tr>
+   <td width="10%"></td>
+   <td width="80%">
+     <h3 >BASIC HTML<h3>
+       <hr>
+       <h1>Heading 1</h1>
+       <h2>Heading 2</h2>
+       <h3>Heading 3</h3>
+       <h4>Heading 4</h4>
+       <p>This is a paragraph format. The paragraph has a different format from the heading tag which gives it a less format.</p>
+      <a href="https://www.google.com/" target="_blank">A sample Link to GOOGLE WEBSITE</a>
+       <br/><br/>
+      <u>Image Sample</u>
+       <br/><br/>
+      <img src="maxresdefault.jpg" padding="20" width="50%">
+
+
+   <!--====================================================
+     HTML5 FORM
+   ====================================================-->
+   <h3 >HTML5 FORM<h3>
+     <hr>
+     <form>
+       <label>Name</label><br>
+       <input type="text" placeholder="Input full Name:" required padding="50"><br><br>
+
+       <label>Date of Birth</label><br>
+       <input type="date" placeholder="Date of Birth " required padding="50"><br><br>
+
+     <label>Select Favourite colr</label><br>
+     <input type="color"><br><br>
+
+     <label>Select Leave Month</label><br>
+     <input type="month"><br><br>
+
+     <label>Select Leave Week</label><br>
+     <input type="week"><br><br>
+   </form>
+
+
+   <!--====================================================
+     HTML5 Graphics
+   ====================================================-->
+   <h3 >HTML5 Graphics<h3>
+     <hr>
+
+     <h4><u>Canvas</u> (Text Canvas)</h4>
+     <!--Example of a canvas for drawing a string-->
+     <canvas id="word_canvas" width="500" height="200" style="border:1px solid #d3d3d3;"></canvas>
+
+     <script>
+     var c = document.getElementById("word_canvas");
+     var ctx = c.getContext("2d");
+     ctx.font = "30px Tahoma";
+     ctx.fillText("Hello Cytonn. This is a test Canvas",10,50);
+     </script>
+
+     <h4><u>SVG</u> (SVG of a square drawing)</h4>
+     <!--Example of a SVG for drawing a SQUARE-->
+         <svg width="400" height="180">
+           <rect x="50" y="20" width="150" height="150"
+           style="fill:grey; stroke:green; stroke-width:5; opacity:0.8" />
+         </svg>
+
+         <h4><u>GOOGLE MAPS</u> (Fedha tower)</h4>
+         <!--Example of a canvas for drawing a string-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1082.6551789934535!2d36.805976505472266!3d-1.263618985841318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1715a1e8fa1d%3A0xb4b200994d668e0b!2sFedha+Plaza%2C+Mpaka+Rd%2C+Nairobi!5e1!3m2!1sen!2ske!4v1509983038712" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+</iframe>
+   </td>
+   <td width="10%"></td>
+ </tr>
+
+</table>
+
+</body>
+</html>
