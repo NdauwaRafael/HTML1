@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GRAPHICS | HTML1 CODE CHALLENGE</title>
+
+<style>
+   canvas {
+     border: 1px solid #cccc;
+     border-radius: 15px;
+   }
+</style>
+
+
+
+
+
+</head>
+
+
+<body>
+
+<table width="100%">
+
+ <tr>
+   <td width="10%"></td>
+   <td width="80%" bgcolor="#eeeeee">
+ <!---=================================
+  DRAWING A CANVAS
+ =======================================-->
+<h3>Creating using Canvas</h3>
+<hr>
+
+<canvas id="can">
+
+</canvas>
+<br><br>
+<!--==========================================
+   Drawing SVG
+=======================================-->
+<h3>Creating using SVG</h3>
+<hr>
+
+<h4><u>Inline SVG</u></h4>
+<svg width="300" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:brown; stroke:red; stroke-width:5;fill-rule:evenodd;" />
+</svg>
+
+<h4><u>Linked SVG</u></h4>
+<img src="NewTux.svg" width="20%">
+
+   </td>
+   <td width="10%"></td>
+ </tr>
+
+</table>
+
+
+<!--======Scripts====-->
+<script>
+var canv = document.getElementById('can');
+canv.width=700;
+canv.height=500;
+var c = canv.getContext("2d");
+
+c.fillStyle = 'rgba(255,0,0,0.5)';
+c.fillRect(100,100,100,100);
+c.fillStyle = 'rgba(0,0,255,0.5)';
+c.fillRect(400,100,100,100);
+c.fillStyle = 'rgba(0,255,0,0.5)';
+c.fillRect(300,300,100,100);
+c.fillStyle = 'rgba(0,50,0,0.5)';
+c.fillRect(600,100,100,100);
+
+/*Create a path*/
+c.beginPath();
+c.moveTo(50, 300);
+c.lineTo(300,100);
+c.lineTo(400,300);
+c.strokestyle="#00bcd4";
+c.stroke();
+
+for (var i = 0; i < 3; i++) {
+  var x = math.random()*700;
+
+  var y = math.random()*500;
+  c.beginPath();
+  c.arc(x,y,30,0, math.PI * 2, false);
+  c.strokeStyle = "blue";
+  c.stroke();
+}
+
+  </script>
+
+
+</body>
+
+<!--======End scripts=====-->
+</html>
